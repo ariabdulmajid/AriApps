@@ -6,8 +6,8 @@ import android.arch.lifecycle.Observer;
 import android.content.Context;
 import android.support.annotation.Nullable;
 
-import com.ariabdulmajid.ariapps.data.model.TemanModel;
-import com.ariabdulmajid.ariapps.data.repo.TemanRepository;
+import com.ariabdulmajid.ariapps.model.TemanModel;
+import com.ariabdulmajid.ariapps.repo.TemanRepository;
 import com.ariabdulmajid.ariapps.view.TemanView;
 
 import java.util.List;

@@ -9,7 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ariabdulmajid.ariapps.R;
-import com.ariabdulmajid.ariapps.data.model.User;
+import com.ariabdulmajid.ariapps.model.User;
 import com.ariabdulmajid.ariapps.presenter.RegisterPresenter;
 import com.ariabdulmajid.ariapps.view.RegisterView;
 

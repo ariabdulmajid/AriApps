@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.ariabdulmajid.ariapps.R;
 import com.ariabdulmajid.ariapps.activity.DetailTemanActivity;
-import com.ariabdulmajid.ariapps.data.model.TemanModel;
+import com.ariabdulmajid.ariapps.model.TemanModel;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -24,16 +24,16 @@ import java.util.Random;
 
 public class TemanAdapter extends RecyclerView.Adapter<TemanAdapter.ViewHolder>  {
 
-    private ArrayList<TemanModel> temanModel;
+    private ArrayList<TemanModel> friends;
     private Context context;
 
-    public TemanAdapter(ArrayList<TemanModel> temanModel, Context context) {
-        this.temanModel = temanModel;
+    public TemanAdapter(ArrayList<TemanModel> friends, Context context) {
+        this.friends = friends;
         this.context = context;
     }
 
     public void setData(ArrayList<TemanModel> items) {
-        this.temanModel = items;
+        this.friends = items;
         notifyDataSetChanged();
     }
 
@@ -46,15 +46,14 @@ public class TemanAdapter extends RecyclerView.Adapter<TemanAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, final int i) {
-        int[] ava = {R.drawable.ava1, R.drawable.ava2, R.drawable.ava3, R.drawable.ava4, R.drawable.ava5};
+        int[] ava = {R.drawable.ava1, R.drawable.ava2, R.drawable.ava3};
         Random ran = new Random();
         int j = ran.nextInt(ava.length);
 
         viewHolder.imgAva.setImageResource(ava[j]);
-        viewHolder.tvNama.setText(temanModel.get(i).getNama());
-        viewHolder.tvNIM.setText(temanModel.get(i).getNim());
+        viewHolder.tvName.setText(friends.get(i).getNama());
 
-        final TemanModel item = temanModel.get(i);
+        final TemanModel item = friends.get(i);
         final int pos = i;
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,18 +68,17 @@ public class TemanAdapter extends RecyclerView.Adapter<TemanAdapter.ViewHolder> 
 
     @Override
     public int getItemCount() {
-        return temanModel.size();
+        return friends.size();
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
         ImageView imgAva;
-        TextView tvNama, tvNIM;
+        TextView tvName;
 
         ViewHolder(View itemView) {
             super(itemView);
             imgAva = itemView.findViewById(R.id.imgAva);
-            tvNama = itemView.findViewById(R.id.tvNama);
-            tvNIM = itemView.findViewById(R.id.tvNim);
+            tvName = itemView.findViewById(R.id.tvName);
         }
     }
 

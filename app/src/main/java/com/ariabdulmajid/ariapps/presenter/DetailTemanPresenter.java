@@ -2,8 +2,8 @@ package com.ariabdulmajid.ariapps.presenter;
 
 import android.content.Context;
 
-import com.ariabdulmajid.ariapps.data.model.TemanModel;
-import com.ariabdulmajid.ariapps.data.repo.TemanRepository;
+import com.ariabdulmajid.ariapps.model.TemanModel;
+import com.ariabdulmajid.ariapps.repo.TemanRepository;
 import com.ariabdulmajid.ariapps.view.DetailTemanView;
 
 /**

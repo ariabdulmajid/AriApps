@@ -5,8 +5,8 @@ import android.arch.lifecycle.Observer;
 import android.content.Context;
 import android.support.annotation.Nullable;
 
-import com.ariabdulmajid.ariapps.data.model.User;
-import com.ariabdulmajid.ariapps.data.repo.UserRepository;
+import com.ariabdulmajid.ariapps.model.User;
+import com.ariabdulmajid.ariapps.repo.UserRepository;
 import com.ariabdulmajid.ariapps.preference.UserPreference;
 import com.ariabdulmajid.ariapps.view.BerandaView;
 

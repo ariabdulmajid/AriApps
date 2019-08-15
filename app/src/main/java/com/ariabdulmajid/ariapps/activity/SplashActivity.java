@@ -6,9 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.ariabdulmajid.ariapps.R;
-import com.ariabdulmajid.ariapps.data.model.TemanModel;
-import com.ariabdulmajid.ariapps.data.model.TemanData;
-import com.ariabdulmajid.ariapps.data.repo.TemanRepository;
+import com.ariabdulmajid.ariapps.model.TemanModel;
+import com.ariabdulmajid.ariapps.model.TemanData;
+import com.ariabdulmajid.ariapps.repo.TemanRepository;
 import com.ariabdulmajid.ariapps.preference.UserPreference;
 
 /**

@@ -1,4 +1,4 @@
-package com.ariabdulmajid.ariapps.data.db;
+package com.ariabdulmajid.ariapps.db;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
@@ -7,7 +7,7 @@ import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.OnConflictStrategy;
 import android.arch.persistence.room.Query;
 import android.arch.persistence.room.Update;
-import com.ariabdulmajid.ariapps.data.model.TemanModel;
+import com.ariabdulmajid.ariapps.model.TemanModel;
 
 import java.util.List;
 

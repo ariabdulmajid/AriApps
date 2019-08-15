@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import com.ariabdulmajid.ariapps.R;
 import com.ariabdulmajid.ariapps.activity.CRUDTemanActivity;
 import com.ariabdulmajid.ariapps.adapter.TemanAdapter;
-import com.ariabdulmajid.ariapps.data.model.TemanModel;
+import com.ariabdulmajid.ariapps.model.TemanModel;
 import com.ariabdulmajid.ariapps.presenter.TemanPresenter;
 import com.ariabdulmajid.ariapps.view.TemanView;
 

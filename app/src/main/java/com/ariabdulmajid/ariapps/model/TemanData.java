@@ -1,4 +1,4 @@
-package com.ariabdulmajid.ariapps.data.model;
+package com.ariabdulmajid.ariapps.model;
 
 /**
  * 14-08-2019, 10116322 - ARI ABDUL MAJID - IF8

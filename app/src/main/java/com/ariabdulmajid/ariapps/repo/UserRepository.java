@@ -1,11 +1,11 @@
-package com.ariabdulmajid.ariapps.data.repo;
+package com.ariabdulmajid.ariapps.repo;
 
 import android.arch.lifecycle.LiveData;
 import android.content.Context;
 import android.os.AsyncTask;
-import com.ariabdulmajid.ariapps.data.db.AppDatabase;
-import com.ariabdulmajid.ariapps.data.db.UserDao;
-import com.ariabdulmajid.ariapps.data.model.User;
+import com.ariabdulmajid.ariapps.db.AppDatabase;
+import com.ariabdulmajid.ariapps.db.UserDao;
+import com.ariabdulmajid.ariapps.model.User;
 
 /**
  * 14-08-2019, 10116322 - ARI ABDUL MAJID - IF8

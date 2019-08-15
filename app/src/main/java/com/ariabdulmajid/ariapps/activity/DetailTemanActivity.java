@@ -14,7 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ariabdulmajid.ariapps.R;
-import com.ariabdulmajid.ariapps.data.model.TemanModel;
+import com.ariabdulmajid.ariapps.model.TemanModel;
 import com.ariabdulmajid.ariapps.presenter.DetailTemanPresenter;
 import com.ariabdulmajid.ariapps.view.DetailTemanView;
 
@@ -71,7 +71,7 @@ public class DetailTemanActivity extends AppCompatActivity implements DetailTema
 
     @Override
     public void showDetail(TemanModel fr) {
-        int[] ava = {R.drawable.ava1, R.drawable.ava2, R.drawable.ava3, R.drawable.ava4, R.drawable.ava5};
+        int[] ava = {R.drawable.ava1, R.drawable.ava2, R.drawable.ava3};
         Random ran = new Random();
         int i = ran.nextInt(ava.length);
 

@@ -1,4 +1,4 @@
-package com.ariabdulmajid.ariapps.data.model;
+package com.ariabdulmajid.ariapps.model;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 import android.os.Parcel;

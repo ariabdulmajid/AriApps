@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import com.ariabdulmajid.ariapps.R;
 import com.ariabdulmajid.ariapps.activity.LoginActivity;
-import com.ariabdulmajid.ariapps.data.model.User;
+import com.ariabdulmajid.ariapps.model.User;
 import com.ariabdulmajid.ariapps.presenter.BerandaPresenter;
 import com.ariabdulmajid.ariapps.view.BerandaView;
 

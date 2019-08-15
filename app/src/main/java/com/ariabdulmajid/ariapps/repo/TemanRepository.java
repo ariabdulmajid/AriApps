@@ -1,11 +1,11 @@
-package com.ariabdulmajid.ariapps.data.repo;
+package com.ariabdulmajid.ariapps.repo;
 
 import android.arch.lifecycle.LiveData;
 import android.content.Context;
 import android.os.AsyncTask;
-import com.ariabdulmajid.ariapps.data.db.AppDatabase;
-import com.ariabdulmajid.ariapps.data.db.TemanDao;
-import com.ariabdulmajid.ariapps.data.model.TemanModel;
+import com.ariabdulmajid.ariapps.db.AppDatabase;
+import com.ariabdulmajid.ariapps.db.TemanDao;
+import com.ariabdulmajid.ariapps.model.TemanModel;
 
 import java.util.List;
 

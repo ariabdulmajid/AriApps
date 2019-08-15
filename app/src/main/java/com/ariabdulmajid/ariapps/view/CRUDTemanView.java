@@ -2,7 +2,7 @@ package com.ariabdulmajid.ariapps.view;
 
 import android.widget.EditText;
 
-import com.ariabdulmajid.ariapps.data.model.TemanModel;
+import com.ariabdulmajid.ariapps.model.TemanModel;
 
 /**
  * 14-08-2019, 10116322 - ARI ABDUL MAJID - IF8

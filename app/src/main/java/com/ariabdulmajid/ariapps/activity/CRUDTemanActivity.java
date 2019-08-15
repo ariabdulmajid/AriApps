@@ -13,7 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ariabdulmajid.ariapps.R;
-import com.ariabdulmajid.ariapps.data.model.TemanModel;
+import com.ariabdulmajid.ariapps.model.TemanModel;
 import com.ariabdulmajid.ariapps.presenter.CRUDTemanPresenter;
 import com.ariabdulmajid.ariapps.view.CRUDTemanView;
 

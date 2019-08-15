@@ -1,12 +1,12 @@
-package com.ariabdulmajid.ariapps.data.db;
+package com.ariabdulmajid.ariapps.db;
 
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
-import com.ariabdulmajid.ariapps.data.model.TemanModel;
-import com.ariabdulmajid.ariapps.data.model.User;
+import com.ariabdulmajid.ariapps.model.TemanModel;
+import com.ariabdulmajid.ariapps.model.User;
 
 /**
  * 14-08-2019, 10116322 - ARI ABDUL MAJID - IF8

@@ -3,8 +3,8 @@ package com.ariabdulmajid.ariapps.presenter;
 import android.content.Context;
 import android.widget.EditText;
 
-import com.ariabdulmajid.ariapps.data.model.User;
-import com.ariabdulmajid.ariapps.data.repo.UserRepository;
+import com.ariabdulmajid.ariapps.model.User;
+import com.ariabdulmajid.ariapps.repo.UserRepository;
 import com.ariabdulmajid.ariapps.view.RegisterView;
 
 /**
