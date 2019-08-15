@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.KontakFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:layout_editor_absoluteX="-29dp" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/design_default_color_primary"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_width="228dp"
+        android:layout_height="201dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Kontak"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/toolbarText" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgFp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ariabdulmajid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.038"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="ARI ABDUL MAJID"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/tvDec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFp"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        app:layout_constraintVertical_bias="0.077"
+        tools:layout_editor_absoluteX="0dp">
+
+        <RelativeLayout
+            android:id="@+id/lytPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/imgTelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="14dp"
+                android:paddingBottom="20dp"
+                android:src="@drawable/ic_phone_black_24dp" />
+
+            <TextView
+                android:id="@+id/tvTelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imgTelp"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/colorMuted"
+                android:text="Telepon" />
+
+            <TextView
+                android:id="@+id/tvTelpSaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="087726572124"
+                android:textSize="15sp"
+                android:layout_below="@id/tvTelp"
+                android:layout_toEndOf="@id/imgTelp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lytEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/imgEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="14dp"
+                android:paddingBottom="20dp"
+                android:src="@drawable/ic_email_black_24dp" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imgEmail"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/colorMuted"
+                android:text="Email" />
+
+            <TextView
+                android:id="@+id/tvEmailSaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ariabdulmajid@gmail.com"
+                android:textSize="15sp"
+                android:layout_below="@id/tvEmail"
+                android:layout_toEndOf="@id/imgEmail"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lytIg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/imgIg"
+                android:layout_width="58dp"
+                android:layout_height="60dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="14dp"
+                android:paddingBottom="20dp"
+                android:src="@drawable/ic_instagram" />
+
+            <TextView
+                android:id="@+id/tvIg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imgIg"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/colorMuted"
+                android:text="Instagram" />
+
+            <TextView
+                android:id="@+id/tvIgSaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\@ariabdulmajid"
+                android:textSize="15sp"
+                android:layout_below="@id/tvIg"
+                android:layout_toEndOf="@id/imgIg"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lytFb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/imgfb"
+                android:layout_width="58dp"
+                android:layout_height="60dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="14dp"
+                android:paddingBottom="20dp"
+                android:src="@drawable/ic_facebook" />
+
+            <TextView
+                android:id="@+id/tvFb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imgfb"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/colorMuted"
+                android:text="Facebook" />
+
+            <TextView
+                android:id="@+id/tvFbsaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ari Abdul Majid"
+                android:textSize="15sp"
+                android:layout_below="@id/tvFb"
+                android:layout_toEndOf="@id/imgfb"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

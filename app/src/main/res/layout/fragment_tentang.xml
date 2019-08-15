@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".fragment.TentangFragment"
+    android:background="@color/design_default_color_primary_dark">
+
+    <LinearLayout
+        android:id="@+id/viewpager1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Ari Apps"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewpager2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/unikom"/>
+
+        <TextView
+            android:id="@+id/tvThanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="8dp"
+            android:text="Terima Kasih"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-thin" />
+
+        <TextView
+            android:id="@+id/tvUniv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="UNIVERSITAS KOMPUTER INDONESIA"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:fontFamily="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewpager3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ariabdulmajid"/>
+
+        <TextView
+            android:id="@+id/tvBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="8dp"
+            android:text="Created by :"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-thin" />
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="ARI ABDUL MAJID"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:fontFamily="serif" />
+
+        <TextView
+            android:id="@+id/tvTahun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="2019"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
